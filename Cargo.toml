@@ -30,7 +30,7 @@ typed-builder = "0.20.1"
 version = "=2.0.0-rc.10"
 features = ["ndarray"]
 default-features=false
-features=["std", "ndarray", "load-dynamic"]
+features=["copy-dylibs", "std", "ndarray", "load-dynamic" "tracing"]
 
 # Similarly, lock 'ort-sys' to the same exact version.
 # This ensures consistency and prevents indirect upgrades that could lead to version mismatches or build issues.
