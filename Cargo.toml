@@ -28,7 +28,6 @@ typed-builder = "0.20.1"
 # Using '=2.0.0-rc.10' ensures that Cargo installs exactly this version, avoiding unexpected breakage.
 [dependencies.ort]
 version = "=2.0.0-rc.10"
-features = ["ndarray"]
 default-features=false
 features=["copy-dylibs", "std", "ndarray", "load-dynamic", "tracing"]
 
@@ -36,7 +35,6 @@ features=["copy-dylibs", "std", "ndarray", "load-dynamic", "tracing"]
 # This ensures consistency and prevents indirect upgrades that could lead to version mismatches or build issues.
 [dependencies.ort-sys]
 version = "=2.0.0-rc.10"
-
 default-features=false
 features=[
     "copy-dylibs",
